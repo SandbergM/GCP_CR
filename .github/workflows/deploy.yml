@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@main
 
     # Setup gcloud CLI
-    - uses: GoogleCloudPlatform/github-actions/setup-gcloudd@v0
+    - uses: google-github-actions/deploy-cloudrun@main
       with:
         service_account_email: ${{ secrets.GCP_EMAIL }}
         service_account_key: ${{ secrets.GCP_CREDENTIALS }}
